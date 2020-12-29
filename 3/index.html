@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>031802641张郑峰实验三</title>
+  </head>
+
+  <body onload="main()" style="display: flex; ">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <div style="display: flex; flex-direction: column; margin-left: 10px; justify-content: center;">
+      <div class='buttonlist'>
+        <div style="font-size: 20px; font-weight: 600; margin-bottom: 10px;">按钮控制：</div>
+        <button onclick="forward()">向前</button>
+        <button onclick="back()">向后</button>
+        <button onclick="left()">向右</button>
+        <button onclick="right()">向左</button>
+        <button onclick="up()">向上</button>
+        <button onclick="down()">向下</button>
+        <button onclick="rotate()">旋转</button>
+      </div>
+      <div class='tiplist' style="margin-top: 10px;">
+        <div style="font-size: 20px; font-weight: 600; margin-bottom: 5px;">键盘控制：</div>
+        <div>
+          <div>向前：Q</div>
+          <div>向后：E</div>
+          <div>向右：A</div>
+          <div>向后：B</div>
+          <div>向上：W</div>
+          <div>向下：S</div>
+          <div>俯视：↓</div>
+          <div>仰视：↑</div>
+          <div>左看右：←</div>
+          <div>右看左：→</div>
+
+          <div>x轴正向光线：J</div>
+          <div>y轴正向光线：K</div>
+          <div>z轴正向光线：Z</div>
+
+          <div>x轴反向光线：U</div>
+          <div>y轴反向光线：I</div>
+          <div>z轴反向光线：O</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="index3.js"></script>
+  </body>
+</html>

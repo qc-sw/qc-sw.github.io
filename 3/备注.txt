@@ -1,0 +1,2 @@
+因为本地图片问题直接打开index3.html会出现Uncaught DOMException: Failed to execute 'texImage2D' on 'WebGLRenderingContext'。
+所以要正常运行，建议直接在vscode等ide上使用
